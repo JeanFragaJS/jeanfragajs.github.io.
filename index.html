@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./styles/styles.css">
+  
+  
+  <title>Jean Fraga</title>
+</head>
+<body>
+    <div>
+      <header>
+        <div>
+          <img src="./images/saturn.png" alt="logo-saturno">
+        </div>
+        <ul>
+          <li>
+            <a  target="_blank" href="https://github.com/JeanFragaJS">GitHub</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5522998702012">Whatsapp</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/jean-fraga/">Linkedin</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <section class="container">
+          <div class="name">
+            <h1>Jean Fraga</h1>
+            <h5>JavaScript Developer</h5>
+          </div>
+
+          <div id="arrow"  onclick= arrowAnimation()>
+         <span id="animation" class="material-symbols-outlined">
+              arrow_drop_down
+            </span>
+          </div>
+
+          <div style="display: none" id="about">
+            <p>
+              Desenvolvedor JavaScript , HTML e CSS. Atualmente focado em Node.js, desenvolvo
+              API's e gerencio banco de dados.
+              Antes disso, trabalhei com eventos e cheguei a atuar no setor têxtil.
+              Meu maior interesse, sem dúvidas, é desenvolver minha carreira no back-end
+              atuando em equipe com outros profissionais.
+              Tenho consciência dos desafios, mas acredito no meu potencial e no suporte da
+              comunidade.
+              
+            </p>
+
+          </div>
+
+          <div class="form">
+            <div>
+              <p>Deixe seu contato</p>
+            </div>
+            <form action="">
+              <input type="text" placeholder="your email">
+              <button type="submit"> Enviar </button>
+            </form>
+          </div>
+        </section>
+
+
+      </main>
+    </div>
+    <script>
+      function arrowAnimation () {
+        const arrow = document.getElementById('animation');
+        arrow.classList.toggle('rotate')
+
+        const display = document.getElementById('about');
+        display.classList.toggle('active')
+      }
+    </script>
+</body>
+</html>
